@@ -1,2 +1,4 @@
-# navi-services
-Navigation and Access to Venue and Institutional (NAVI) Services: A campus map + appointment scheduler for Ateneo de Naga University 
+## WILSON
+# WILSON: Web Interface for Location, Scheduling, and Office Navigation
+
+A Campus Map + Appointment Scheduler for Ateneo de Naga University 
