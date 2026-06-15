@@ -1,7 +1,7 @@
 function Home() {
   return (
     <div>
-      <h1>Welcome to NAVI</h1>
+      <h1>Welcome to WILSON</h1>
 
       <p>
         Campus Navigation and Appointment
