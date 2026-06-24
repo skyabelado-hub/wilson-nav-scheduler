@@ -1,19 +1,36 @@
-function Login() {
+import "../styles/Login.css";
+
+function Login({ goBack }) {
   return (
-    <div>
-      <h1>Login</h1>
+    <div className="login-container">
 
-      <input
-        type="email"
-        placeholder="Email"
-      />
+      <div className="login-card">
 
-      <input
-        type="password"
-        placeholder="Password"
-      />
+        <h1>Login</h1>
 
-      <button>Login</button>
+        <input
+          type="email"
+          placeholder="Email"
+        />
+
+        <input
+          type="password"
+          placeholder="Password"
+        />
+
+        <button className="signin-btn">
+          Sign In
+        </button>
+
+        <button
+          className="back-btn"
+          onClick={goBack}
+        >
+          Back
+        </button>
+
+      </div>
+
     </div>
   );
 }
