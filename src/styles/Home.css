@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .hero-section {
@@ -18,22 +19,24 @@
 }
 
 .logo {
-  width: 260px;   
-  margin-bottom: 10px;
+  width: 200px;   
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-section h1 {
   font-size: 64px;
   font-weight: 700;
   color: #123f78;
+  letter-spacing: 1px;
 
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .landing-card {
   width: 600px;
 
-  background: transparent;
+  background-color: rgb(206, 230, 250);
 
   border: 1px solid #d3d3d3;
 
@@ -50,9 +53,9 @@
   font-size: 30px;
   font-weight: 700;
 
-  color: #222;
+  color: #1b1b1b;
 
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 
@@ -60,46 +63,40 @@
 
 .description {
   color: #959595;
-  margin-top: 1px;
+  margin-top: 0px;
   font-size: 15px;
   margin-left: 20px;
   margin-right: 20px;
+  line-height: 1.5;
+  word-spacing: 0.5px;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
   gap: 16px;
-
   margin-top: 25px;
 }
 
-.map-btn {
-  background: #19a7d8;
-  color: white;
+.map-btn,
+.login-btn {
+  width: 170px;
+  height: 35px;
 
   border: none;
+  border-radius: 8px;
 
-  padding: 12px 28px;
-
-  border-radius: 6px;
-
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 550;
 
   cursor: pointer;
 }
 
+.map-btn {
+  background: #123f78;
+  color: rgb(235, 234, 234);}
+
 .login-btn {
   background: #f4c400;
-  color: white;
-
-  border: none;
-
-  padding: 12px 35px;
-
-  border-radius: 6px;
-
-  font-size: 16px;
-
-  cursor: pointer;
+  color: rgb(235, 234, 234);
 }

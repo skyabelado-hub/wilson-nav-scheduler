@@ -1,64 +1,104 @@
 .login-container {
-  height: 100vh;
+  min-height: 100vh;
+  background: #d8eaf3;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background: #d9edf5;
 }
 
-.login-card {
-  width: 400px;
+.login-box {
+  width: 420px;
 
   background: white;
 
-  padding: 40px;
+  padding: 30px;
 
-  border-radius: 10px;
+  border-radius: 6px;
 
-  box-shadow: 0 4px 15px rgba(0,0,0,.1);
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
 
+.login-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 20px;
+}
+
+.login-logo img {
+  width: 28px;
+}
+
+.login-logo span {
+  font-weight: 700;
+  color: #173f78;
+}
+
+.login-box h2 {
+  font-size: 28px;
+  color: #222;
+
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #888;
+
+  margin-bottom: 20px;
+}
+
+.login-box form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
-.login-card h1 {
-  text-align: center;
-  color: #163f78;
+.login-box label {
+  font-size: 12px;
+  font-weight: 600;
+
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
-.login-card input {
-  padding: 12px;
+.login-box input {
+  height: 40px;
 
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 
-  border-radius: 5px;
+  padding: 0 12px;
 }
 
-.signin-btn {
-  background: #1da7d8;
-  color: white;
+.login-buttons {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.login1-btn,
+.register-btn {
+  flex: 1;
+
+  height: 38px;
 
   border: none;
-
-  padding: 12px;
-
-  border-radius: 5px;
+  border-radius: 4px;
 
   cursor: pointer;
+
+  font-weight: 600;
 }
 
-.back-btn {
-  background: #777;
+.login1-btn {
+  background: #22a8d8;
   color: white;
+}
 
-  border: none;
-
-  padding: 12px;
-
-  border-radius: 5px;
-
-  cursor: pointer;
+.register-btn {
+  background: white;
+  border: 1px solid #ddd;
 }

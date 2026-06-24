@@ -1,33 +1,56 @@
 import "../styles/Login.css";
 
-function Login({ goBack }) {
+function Login({ goToRegister }) {
   return (
     <div className="login-container">
 
-      <div className="login-card">
+      <div className="login-box">
 
-        <h1>Login</h1>
+        <div className="login-logo">
+          <img src="/logo.png" alt="WILSON" />
+          <span>WILSON</span>
+        </div>
 
-        <input
-          type="email"
-          placeholder="Email"
-        />
+        <h2>Welcome back</h2>
 
-        <input
-          type="password"
-          placeholder="Password"
-        />
+        <p className="subtitle">
+          Sign in to open maps and appointments.
+        </p>
 
-        <button className="signin-btn">
-          Sign In
-        </button>
+        <form>
 
-        <button
-          className="back-btn"
-          onClick={goBack}
-        >
-          Back
-        </button>
+          <label>Email</label>
+          <input
+            type="email"
+            placeholder="student@adnu.edu.ph"
+          />
+
+          <label>Password</label>
+          <input
+            type="password"
+            placeholder="••••••••••"
+          />
+
+          <div className="login-buttons">
+
+            <button
+              type="submit"
+              className="login1-btn"
+            >
+              Log In
+            </button>
+
+            <button
+  type="button"
+  className="register-btn"
+  onClick={goToRegister}
+>
+  Create Account
+</button>
+
+          </div>
+
+        </form>
 
       </div>
 
