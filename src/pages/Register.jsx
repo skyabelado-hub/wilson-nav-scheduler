@@ -85,21 +85,19 @@ function Register({ goToLogin }) {
     "Staff"
   ].map((type) => (
 
-    <div
-      key={type}
-      className={
-        accountType === type
-          ? "account-option selected"
-          : "account-option"
-      }
-      onClick={() => setAccountType(type)}
-    >
+    <div key={type} className={  accountType === type ? "account-option selected": "account-option"}onClick={() => setAccountType(type)}>
       {type}
     </div>
 
   ))}
 
 </div>
+
+
+            <button type="submit" className="register1-btn">
+                Register
+            </button>
+
 
             <p className="login-link">
                 Already have an account?
