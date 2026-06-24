@@ -1,6 +1,16 @@
+
+import { useState } from "react";
 import "../styles/Register.css";
 
+
+
+
+
 function Register({ goToLogin }) {
+
+
+  const [accountType, setAccountType] = useState("Guest");
+
   return (
     <div className="register-container">
 
@@ -67,13 +77,29 @@ function Register({ goToLogin }) {
 
             <div className="account-types">
 
-              <button type="button">Guest</button>
-              <button type="button">College</button>
-              <button type="button">Graduate</button>
-              <button type="button">Faculty</button>
-              <button type="button">Staff</button>
+  {[
+    "Guest",
+    "College",
+    "Graduate",
+    "Faculty",
+    "Staff"
+  ].map((type) => (
 
-            </div>
+    <div
+      key={type}
+      className={
+        accountType === type
+          ? "account-option selected"
+          : "account-option"
+      }
+      onClick={() => setAccountType(type)}
+    >
+      {type}
+    </div>
+
+  ))}
+
+</div>
 
             <p className="login-link">
                 Already have an account?
