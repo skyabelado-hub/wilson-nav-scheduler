@@ -36,7 +36,7 @@
 .landing-card {
   width: 600px;
 
-  background-color: rgb(206, 230, 250);
+  background-color: rgb(255, 255, 255);
 
   border: 1px solid #d3d3d3;
 
@@ -93,7 +93,7 @@
 }
 
 .map-btn {
-  background: #123f78;
+  background: #22a8d8;
   color: rgb(235, 234, 234);}
 
 .login-btn {
